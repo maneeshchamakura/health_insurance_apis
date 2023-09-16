@@ -1,0 +1,20 @@
+auth0:
+  audience: https://quickstarts/api
+spring:
+  security:
+    oauth2:
+        resourceserver:
+            jwt:
+                issuer-uri: https://dev-77es4fksvluam0eo.us.auth0.com/
+logging:
+  level:
+    org.springframework.security: DEBUG
+
+myauth0:
+  connection: Username-Password-Authentication
+  client_id: rYiSO3vVHMLDw8KLOZzc7vwtWlJEdON5
+  client_secret: f1y2EkC4SX1YnxuR3g8AM0zo-ixVUdoeNrczZEwlY0zw0i0rJ4mBPGQjcYpyrex4
+  signup_url: https://dev-77es4fksvluam0eo.us.auth0.com/dbconnections/signup
+  login_url: https://dev-77es4fksvluam0eo.us.auth0.com/oauth/token
+  refresh_url: https://dev-77es4fksvluam0eo.us.auth0.com/oauth/token
+  userinfo_url: https://dev-77es4fksvluam0eo.us.auth0.com/userinfo
